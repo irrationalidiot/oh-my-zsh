@@ -23,4 +23,4 @@ alias la='ls -lA'
 alias sl=ls # often screw this up
 
 alias afind='ack-grep -il'
-
+alias hosts='echo $hosts | tr -s "[:space:]" "\n" | sort'
