@@ -2,25 +2,16 @@
 alias pu='pushd'
 alias po='popd'
 
-# Basic directory operations
-alias ...='cd ../..'
-alias -- -='cd -'
-
 # Super user
-alias _='sudo'
 alias please='sudo'
 
-#alias g='grep -in'
-
 # Show history
-alias history='fc -l 1'
+alias history='fc -ld 1'
 
 # List direcory contents
-alias lsa='ls -lah'
-alias l='ls -lA1'
 alias ll='ls -l'
-alias la='ls -lA'
-alias sl=ls # often screw this up
 
-alias afind='ack-grep -il'
-alias hosts='echo $hosts | tr -s "[:space:]" "\n" | sort'
+alias hosts='echo $hosts | tr -s "[:space:]" "\n" | sort | uniq'
+alias vb='/usr/bin/VBoxManage'
+alias vbs='/usr/bin/VBoxManage startvm'
+alias vbc='/usr/bin/VBoxManage controlvm'
